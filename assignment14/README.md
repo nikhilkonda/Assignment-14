@@ -1,3 +1,27 @@
+I have used Loopback tool to do this assignment wherein I used the following commands 
+Install node.js
+$ npm install -g @loopback/cli
+$ lb4 app
+and I have clicked enter as per the instructions given
+$ cd getting-started
+$ npm start
+Used  $ lb4 controller to add Controller to the code 
+[?] Controller class name: hello
+[?] What kind of controller would you like to generate? Empty Controller
+    create src/controllers/hello.controller.ts
+    update src/controllers/index.ts
+Controller Hello was now created in src/controllers/
+import {get} from '@loopback/rest';
+export class HelloController {
+  @get('/hello')
+  hello(): string {
+    return 'Hello world!';
+  }
+}
+and I visited Visit http://127.0.0.1:3000/hello to see the desired output Hello world!
+
+
+
 # assignment14
 
 This application is generated using [LoopBack 4 CLI](https://loopback.io/doc/en/lb4/Command-line-interface.html) with the
